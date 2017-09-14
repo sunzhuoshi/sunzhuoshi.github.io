@@ -29,19 +29,27 @@
 			url: 'https://github.com/nneonneo/2048-ai'
 		}
 	];
-	function CreateSimpleElement(name, text) {
+	function CreateSimpleElement(name, text, className) {
 		var element = document.createElement(name);
-		element.appendChild(document.createTextNode(text));
+		if (text) {
+			element.appendChild(document.createTextNode(text));			
+		}
+		if (className) {
+			element.className = className;
+		}
 		return element;
 	}
 	function FillGameContainer(container, gameList) {
 		for (var i=0; i<gameList.length; ++i) {
 			var gameInfo = gameList[i];
-			container.appendChild(CreateSimpleElement('H3', gameInfo.name));
+			container.appendChild(CreateSimpleElement('DIV', gameInfo.name, 'h2'));
 			container.appendChild(CreateSimpleElement('P', gameInfo.desc));
-			var urlElement = CreateSimpleElement('a', gameInfo.url);
-			urlElement.href = gameInfo.url;
-			container.appendChild(urlElement);				
+			var aElement = CreateSimpleElement('A', gameInfo.url);
+			aElement.href = gameInfo.url;
+			aElement.target = '_blank';
+			var pElement = CreateSimpleElement('P');
+			pElement.appendChild(aElement);
+			container.appendChild(pElement);				
 		}
 	}	
 	FillGameContainer(document.getElementById('online-container'), OnlineGameList);

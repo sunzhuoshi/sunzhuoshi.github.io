@@ -7,6 +7,10 @@
 		{
 			label: 'Game AI',
 			url: 'game-ai.html'
+		},
+		{
+			label: 'About Me',
+			url: 'about.html'
 		}
 	];
 	var navElement = document.createElement('NAV');
