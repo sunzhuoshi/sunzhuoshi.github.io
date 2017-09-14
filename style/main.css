@@ -48,6 +48,10 @@ nav > ul > li > a {
     text-decoration: none;
 }
 
+nav > ul > li > a.active {
+	color: #fff;
+}
+
 nav li:hover {
     background-color: #666;
 }
