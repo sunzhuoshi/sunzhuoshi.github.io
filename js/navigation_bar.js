@@ -9,7 +9,7 @@
 			url: 'game-ai.html'
 		},
 		{
-			label: 'About Me',
+			label: 'About',
 			url: 'about.html'
 		}
 	];
