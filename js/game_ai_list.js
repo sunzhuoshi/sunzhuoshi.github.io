@@ -20,7 +20,12 @@
 			name: '2048 AI by sunzhuoshi',
 			desc: '2048 AI based on Expectimax, Pure Monte Carlo and Q learning(coming soon).',
 			url: 'https://sunzhuoshi.github.io/2048/ai.html'
-		}			
+		},
+		{
+			name: 'CocosFlappyBird-QL by sunzhuoshi',
+			desc: 'Flappy Bird with Q Learning made with Cocos Creator.',
+			url: 'https://github.com/sunzhuoshi/CocosFlappyBird-QL'
+		}
 	];
 	var OfflineGameList = [
 		{
